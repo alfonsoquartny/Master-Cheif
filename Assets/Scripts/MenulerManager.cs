@@ -20,7 +20,11 @@ public class MenulerManager : MonoBehaviour
         
     }
 
+    public void test()
+    {
+        PlayerPrefs.Save();
 
+    }
     public void deletePlayerPrefs()
     {
         PlayerPrefs.DeleteAll();

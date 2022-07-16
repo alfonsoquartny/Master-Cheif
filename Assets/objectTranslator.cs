@@ -44,7 +44,7 @@ public class objectTranslator : MonoBehaviour
             yFloat = 180;
         }
     }
-        
+
     public void Ok()
     {
         Debug.Log("KAYDEDILDI");
