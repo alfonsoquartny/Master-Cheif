@@ -39,14 +39,15 @@ public class objectTranslator : MonoBehaviour
         Obje.transform.Rotate(0, -90, 0);
         yFloat = yFloat - 90;
 
-        if (yFloat > 180)
+        if (yFloat < -90)
         {
-
+            yFloat = 180;
         }
     }
         
     public void Ok()
     {
+        Debug.Log("KAYDEDILDI");
         PlayerPrefs.SetFloat(gameObject.name,yFloat);
     }
 }

@@ -4663,7 +4663,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 817874000078291809, guid: 442795733bede5e429a9dd50e631a528, type: 3}
       propertyPath: yFloat
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3758575420667813280, guid: 442795733bede5e429a9dd50e631a528, type: 3}
       propertyPath: m_RootOrder
