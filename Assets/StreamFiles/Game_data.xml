@@ -2,12 +2,228 @@
 <ItemOB xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <items>
     <Item>
-      <prefabID>blue</prefabID>
-      <ItemID>blue1dataBase (DataManager)</ItemID>
+      <prefabID>red</prefabID>
+      <ItemID>red0dataBase (DataManager)</ItemID>
       <position>
-        <x>0.132896259</x>
-        <y>7.821672E-17</y>
-        <z>-3.52256775</z>
+        <x>-0.216830343</x>
+        <y>6.996589E-17</y>
+        <z>-3.15098333</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red1dataBase (DataManager)</ItemID>
+      <position>
+        <x>-2.16218615</x>
+        <y>-5.18552875E-17</y>
+        <z>2.33535433</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red2dataBase (DataManager)</ItemID>
+      <position>
+        <x>-1.06928968</x>
+        <y>-4.99139244E-17</y>
+        <z>2.24792337</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red3dataBase (DataManager)</ItemID>
+      <position>
+        <x>0.0017492472</x>
+        <y>-5.03992644E-17</y>
+        <z>2.269781</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red4dataBase (DataManager)</ItemID>
+      <position>
+        <x>1.61923468</x>
+        <y>-4.700186E-17</y>
+        <z>2.11677551</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red5dataBase (DataManager)</ItemID>
+      <position>
+        <x>0.9853551</x>
+        <y>-4.94285745E-17</y>
+        <z>2.22606516</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red6dataBase (DataManager)</ItemID>
+      <position>
+        <x>-2.38076544</x>
+        <y>-4.0207046E-17</y>
+        <z>1.81076419</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red7dataBase (DataManager)</ItemID>
+      <position>
+        <x>-2.5337708</x>
+        <y>-1.01157563E-17</y>
+        <z>0.455573171</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red8dataBase (DataManager)</ItemID>
+      <position>
+        <x>-2.75234985</x>
+        <y>2.38582711E-17</y>
+        <z>-1.074481</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red9dataBase (DataManager)</ItemID>
+      <position>
+        <x>-2.83978128</x>
+        <y>4.18159751E-17</y>
+        <z>-1.883224</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red10dataBase (DataManager)</ItemID>
+      <position>
+        <x>-1.79060125</x>
+        <y>4.08452754E-17</y>
+        <z>-1.8395077</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red11dataBase (DataManager)</ItemID>
+      <position>
+        <x>-0.54469943</x>
+        <y>4.084528E-17</y>
+        <z>-1.8395077</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red12dataBase (DataManager)</ItemID>
+      <position>
+        <x>0.460764885</x>
+        <y>4.0845282E-17</y>
+        <z>-1.83950782</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red13dataBase (DataManager)</ItemID>
+      <position>
+        <x>1.33508229</x>
+        <y>3.93892522E-17</y>
+        <z>-1.77393413</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red14dataBase (DataManager)</ItemID>
+      <position>
+        <x>1.968962</x>
+        <y>1.46367376E-17</y>
+        <z>-0.6591801</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red15dataBase (DataManager)</ItemID>
+      <position>
+        <x>2.47169471</x>
+        <y>-1.49692013E-17</y>
+        <z>0.6741529</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>red</prefabID>
+      <ItemID>red16dataBase (DataManager)</ItemID>
+      <position>
+        <x>3.193005</x>
+        <y>-4.311912E-17</y>
+        <z>1.94191241</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue17dataBase (DataManager)</ItemID>
+      <position>
+        <x>3.76131153</x>
+        <y>-3.77803363E-17</y>
+        <z>1.70147514</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue18dataBase (DataManager)</ItemID>
+      <position>
+        <x>3.82688522</x>
+        <y>-8.65974556E-18</y>
+        <z>0.390000254</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue19dataBase (DataManager)</ItemID>
+      <position>
+        <x>4.13289642</x>
+        <y>1.22100229E-17</y>
+        <z>-0.5498905</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue20dataBase (DataManager)</ItemID>
+      <position>
+        <x>1.70666671</x>
+        <y>-6.23302677E-18</y>
+        <z>0.280710548</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue21dataBase (DataManager)</ItemID>
+      <position>
+        <x>3.34601116</x>
+        <y>7.841939E-18</y>
+        <z>-0.35316956</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue22dataBase (DataManager)</ItemID>
+      <position>
+        <x>4.438907</x>
+        <y>-1.739591E-17</y>
+        <z>0.78344214</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>green</prefabID>
+      <ItemID>green23dataBase (DataManager)</ItemID>
+      <position>
+        <x>-1.89989078</x>
+        <y>-7.95198634E-17</y>
+        <z>3.58125615</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>green</prefabID>
+      <ItemID>green24dataBase (DataManager)</ItemID>
+      <position>
+        <x>0.0236066561</x>
+        <y>-7.90345135E-17</y>
+        <z>3.55939817</z>
       </position>
     </Item>
   </items>
