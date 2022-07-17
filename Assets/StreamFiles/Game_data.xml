@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ItemOB xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <items>
+    <Item>
+      <prefabID>blue</prefabID>
+      <ItemID>blue1dataBase (DataManager)</ItemID>
+      <position>
+        <x>0.132896259</x>
+        <y>7.821672E-17</y>
+        <z>-3.52256775</z>
+      </position>
+    </Item>
+  </items>
+</ItemOB>

@@ -29,6 +29,7 @@ public class spawner : MonoBehaviour
     {
         switchMode();
         Building();
+        DeleteItem();
     }
 
 
@@ -64,10 +65,27 @@ public class spawner : MonoBehaviour
         {
             if (PointerHit.collider.tag == "Water" && Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Instantiate(PrefabDataBase.Instance.RequestPrefab(selectedObject), PointerHit.point, Quaternion.identity);
+            GameObject OBJ=    Instantiate(PrefabDataBase.Instance.RequestPrefab(selectedObject), PointerHit.point, Quaternion.identity);
+                DataManager.Instance.AddItem(OBJ);
+            
             }
         }
     }
+
+    void DeleteItem()
+    {
+        if (buildMode != BuildMode.Deleting) return;
+
+        if (isRayHiting())
+        {
+            if (PointerHit.collider.tag == "Building" && Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                DataManager.Instance.RemoveItem(PointerHit.collider.gameObject.name);
+                Destroy(PointerHit.collider.gameObject);
+            }
+        }
+    }
+
 
    bool isRayHiting()
     {
