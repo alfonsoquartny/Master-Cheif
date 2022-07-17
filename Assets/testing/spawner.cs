@@ -64,7 +64,7 @@ public class spawner : MonoBehaviour
         {
             if (PointerHit.collider.tag == "Water" && Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Instantiate(BuildingPrefab, PointerHit.point, Quaternion.identity);
+                Instantiate(PrefabDataBase.Instance.RequestPrefab(selectedObject), PointerHit.point, Quaternion.identity);
             }
         }
     }

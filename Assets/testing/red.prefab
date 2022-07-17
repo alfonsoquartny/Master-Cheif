@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4878096598520264342}
   - component: {fileID: 4878096598520264337}
-  - component: {fileID: 6837468977842668603}
   - component: {fileID: 4878096598520264336}
   - component: {fileID: 4878096598520264339}
   m_Layer: 0
-  m_Name: CubePrefab
+  m_Name: red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,19 +41,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4878096598520264338}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6837468977842668603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4878096598520264338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb3debe1dab9244a1b3b9580ffb11d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedObject: 1234
 --- !u!23 &4878096598520264336
 MeshRenderer:
   m_ObjectHideFlags: 0
