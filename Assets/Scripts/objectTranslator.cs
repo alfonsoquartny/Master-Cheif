@@ -5,9 +5,10 @@ using UnityEngine;
 public class objectTranslator : MonoBehaviour
 {
 
-
+    private Transform newTransform;
     public GameObject Obje;
     public float yFloat;
+
     void Start()
     {
         Debug.Log(gameObject.name);
@@ -48,5 +49,7 @@ public class objectTranslator : MonoBehaviour
     {
         Debug.Log("KAYDEDILDI");
         PlayerPrefs.SetFloat(gameObject.name,yFloat);
+   var newObject = Instantiate(gameObject);
+        newObject.GetComponentInChildren<Canvas>().enabled=false;
     }
 }
