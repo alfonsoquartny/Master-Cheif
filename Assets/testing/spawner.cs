@@ -27,36 +27,26 @@ public class spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switchMode();
         Building();
         DeleteItem();
     }
 
 
-    void switchMode()
+    
+    public void deleteMode()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log("1");
-            buildMode = BuildMode.Building;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log("1");
-            buildMode = BuildMode.Free;
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("1");
-            buildMode = BuildMode.Selecting;
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("1");
-            buildMode = BuildMode.Deleting;
-        }
+        buildMode = BuildMode.Deleting;
     }
+    public void BuildingMode()
+    {
+        buildMode = BuildMode.Building;
 
+    }
+    public void  SelectingMode()
+    {
+        buildMode = BuildMode.Selecting;
+
+    }
     void Building()
     {
         if (buildMode != BuildMode.Building) return;

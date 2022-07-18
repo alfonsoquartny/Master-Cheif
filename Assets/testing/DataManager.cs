@@ -12,11 +12,11 @@ public class DataManager : MonoBehaviour
 {
     public static DataManager Instance { get; set; }
     public ItemOB ItemOB;
-
     private void Start()
     {
         Instance = this;
         LoadData();
+
     }
     public void AddItem(GameObject obj)
     {
@@ -26,6 +26,7 @@ public class DataManager : MonoBehaviour
         obj.name = item.ItemID;
         item.position = obj.transform.position;//rotation da ekle
         ItemOB.items.Add(item);
+
     }
     public void RemoveItem(string itemId)
     {
@@ -33,8 +34,7 @@ public class DataManager : MonoBehaviour
         ItemOB.items.Remove(item);
 
     }
-
-
+  
     public void SaveData()
     {
         XmlSerializer xmlSerializer = new XmlSerializer(typeof(ItemOB));
@@ -53,7 +53,7 @@ public class DataManager : MonoBehaviour
 
         foreach(Item item in ItemOB.items)
         {
-            GameObject go =  Instantiate(PrefabDataBase.Instance.RequestPrefab(item.prefabID), item.position, Quaternion.identity);
+            GameObject go =  Instantiate(PrefabDataBase.Instance.RequestPrefab(item.prefabID), item.position,Quaternion.identity);
             go.name = item.ItemID;
         }
     }
@@ -72,4 +72,5 @@ public class Item
     public string prefabID;
     public string ItemID;
     public Vector3 position;
+
 }

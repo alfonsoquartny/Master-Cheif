@@ -6,16 +6,20 @@ public class objectTranslator : MonoBehaviour
 {
 
     private Transform newTransform;
-    public GameObject Obje;
     public float yFloat;
+    public GameObject canvas;
 
     void Start()
     {
-        Debug.Log(gameObject.name);
-        Debug.Log(Obje.transform.rotation.y);
-      yFloat= PlayerPrefs.GetFloat(gameObject.name);
-
-        Obje.transform.Rotate(0, yFloat, 0);
+        if (PlayerPrefs.GetInt(gameObject.name) == 1)
+        {
+            Destroy(canvas);
+        }
+        Debug.Log(base.gameObject.name);
+        Debug.Log(gameObject.transform.rotation.y);
+        yFloat = PlayerPrefs.GetFloat(base.gameObject.name);
+       
+        gameObject.transform.Rotate(0, yFloat, 0);
     }
 
     // Update is called once per frame
@@ -25,7 +29,7 @@ public class objectTranslator : MonoBehaviour
 
     public void DondurSag()
     {
-        Obje.transform.Rotate(0, +90, 0);
+        gameObject.transform.Rotate(0, +90, 0);
         yFloat = yFloat + 90;
 
         if (yFloat > 180)
@@ -36,7 +40,7 @@ public class objectTranslator : MonoBehaviour
 
     public void DondurSol()
     {
-        Obje.transform.Rotate(0, -90, 0);
+        gameObject.transform.Rotate(0, -90, 0);
         yFloat = yFloat - 90;
 
         if (yFloat < -90)
@@ -47,9 +51,11 @@ public class objectTranslator : MonoBehaviour
 
     public void Ok()
     {
+        Destroy(canvas);
+        PlayerPrefs.SetInt(gameObject.name, 1);
+        DataManager.Instance.SaveData();
         Debug.Log("KAYDEDILDI");
-        PlayerPrefs.SetFloat(gameObject.name,yFloat);
-   var newObject = Instantiate(gameObject);
-        newObject.GetComponentInChildren<Canvas>().enabled=false;
+
+
     }
 }
