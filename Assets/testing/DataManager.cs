@@ -54,6 +54,7 @@ public class DataManager : MonoBehaviour
         foreach(Item item in ItemOB.items)
         {
             GameObject go =  Instantiate(PrefabDataBase.Instance.RequestPrefab(item.prefabID), item.position,Quaternion.identity);
+            spawner.Instance.SelectingMode();
             go.name = item.ItemID;
         }
     }

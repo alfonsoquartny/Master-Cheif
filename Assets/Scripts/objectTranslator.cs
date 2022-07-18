@@ -12,25 +12,27 @@ public class objectTranslator : MonoBehaviour
     void Start()
     {
         Instance = this;
-        if (PlayerPrefs.GetInt(gameObject.name) == 1)
-        {
-            canvas.SetActive(false);
-        }
-        if (PlayerPrefs.GetInt(gameObject.name) == 0)
-        {
-            canvas.SetActive(true);
-        }
+      
         Debug.Log(base.gameObject.name);
         Debug.Log(gameObject.transform.rotation.y);
         yFloat = PlayerPrefs.GetFloat(base.gameObject.name);
        
         gameObject.transform.Rotate(0, yFloat, 0);
+        PlayerPrefs.DeleteAll();
+        if (PlayerPrefs.GetInt(gameObject.name) == 1)
+        {
+            canvas.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+      
+        if (PlayerPrefs.GetInt(gameObject.name) == 0)
+        {
+            canvas.SetActive(true);
+        }
     }
 
     public void DondurSag()
@@ -57,7 +59,6 @@ public class objectTranslator : MonoBehaviour
 
     public void Ok()
     {
-     canvas.SetActive(false);
         PlayerPrefs.SetInt(gameObject.name, 1);
         DataManager.Instance.SaveData();
         Debug.Log("KAYDEDILDI");

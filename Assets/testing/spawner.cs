@@ -11,7 +11,8 @@ public class spawner : MonoBehaviour
 
     public string selectedObject;
 
-
+    public objectTranslator objectTranslator;
+    public GameObject selectingModeBuilding;
     public GameObject BuildingPrefab;
     enum BuildMode { Building, Selecting, Free, Deleting } [SerializeField] BuildMode buildMode = new BuildMode();
 
@@ -21,7 +22,7 @@ public class spawner : MonoBehaviour
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -29,6 +30,24 @@ public class spawner : MonoBehaviour
     {
         Building();
         DeleteItem();
+        selectMode();
+
+        Debug.Log(buildMode);
+        selectingModeBuilding = PointerHit.collider.gameObject;
+        if (buildMode == BuildMode.Selecting)
+        {
+            Debug.Log("selectýng");
+            if (PointerHit.collider.tag == "Building" && Input.GetKeyDown(KeyCode.Mouse0))
+            {
+
+
+              
+                PlayerPrefs.SetInt(selectingModeBuilding.gameObject.name, 0);
+        
+
+
+            }
+        }
 
     }
 
@@ -36,17 +55,17 @@ public class spawner : MonoBehaviour
     public void selectMode()
     {
 
-        if (buildMode != BuildMode.Selecting)
-            return;
-            if (PointerHit.collider.tag == "Building" && Input.GetKeyDown(KeyCode.Mouse0))
-            {
-            PlayerPrefs.SetInt(PointerHit.collider.name, 0);
-            objectTranslator.Instance.selected();
-            }
-            if (PointerHit.collider.tag == "Water" && Input.GetKeyDown(KeyCode.Mouse0))
-            {
+     
+
+    
+
+          
+        if (PointerHit.collider.tag == "Water" && Input.GetKeyDown(KeyCode.Mouse0))
+        {
                 objectTranslator.Instance.Ok();
-            }
+            PlayerPrefs.SetInt(objectTranslator.gameObject.name, 0);
+            objectTranslator.canvas.SetActive(false);
+        }
     }
     public void deleteMode()
     {
@@ -72,7 +91,9 @@ public class spawner : MonoBehaviour
             {
             GameObject OBJ=    Instantiate(PrefabDataBase.Instance.RequestPrefab(selectedObject), PointerHit.point, Quaternion.identity);
                 DataManager.Instance.AddItem(OBJ);
-            
+               SelectingMode();
+
+
             }
         }
     }
