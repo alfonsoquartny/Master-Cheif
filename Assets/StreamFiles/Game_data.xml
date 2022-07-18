@@ -2,12 +2,66 @@
 <ItemOB xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <items>
     <Item>
-      <prefabID>masa01</prefabID>
-      <ItemID>masa010dataBase (DataManager)</ItemID>
+      <prefabID>masa02</prefabID>
+      <ItemID>masa020dataBase (DataManager)</ItemID>
       <position>
-        <x>25.8936863</x>
-        <y>0</y>
-        <z>2.271</z>
+        <x>16.70986</x>
+        <y>0.001</y>
+        <z>16.6166077</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>masa02</prefabID>
+      <ItemID>masa021dataBase (DataManager)</ItemID>
+      <position>
+        <x>15.1909962</x>
+        <y>0.001</y>
+        <z>14.74878</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>masa01</prefabID>
+      <ItemID>masa012dataBase (DataManager)</ItemID>
+      <position>
+        <x>19.35904</x>
+        <y>0.001</y>
+        <z>12.6823435</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>masa01</prefabID>
+      <ItemID>masa013dataBase (DataManager)</ItemID>
+      <position>
+        <x>22.9972458</x>
+        <y>0.001</y>
+        <z>12.5631514</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>masa01</prefabID>
+      <ItemID>masa014dataBase (DataManager)</ItemID>
+      <position>
+        <x>23.2091827</x>
+        <y>0.001</y>
+        <z>16.4973526</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>masa01</prefabID>
+      <ItemID>masa015dataBase (DataManager)</ItemID>
+      <position>
+        <x>27.4478741</x>
+        <y>0.001</y>
+        <z>11.8875551</z>
+      </position>
+    </Item>
+    <Item>
+      <prefabID>masa01</prefabID>
+      <ItemID>masa016dataBase (DataManager)</ItemID>
+      <position>
+        <x>27.4478741</x>
+        <y>0.001</y>
+        <z>15.464119</z>
       </position>
     </Item>
   </items>

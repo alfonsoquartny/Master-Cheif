@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class objectTranslator : MonoBehaviour
 {
-
+    public static objectTranslator Instance { get; set; }
     private Transform newTransform;
     public float yFloat;
     public GameObject canvas;
 
     void Start()
     {
+        Instance = this;
         if (PlayerPrefs.GetInt(gameObject.name) == 1)
         {
-            Destroy(canvas);
+            canvas.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt(gameObject.name) == 0)
+        {
+            canvas.SetActive(true);
         }
         Debug.Log(base.gameObject.name);
         Debug.Log(gameObject.transform.rotation.y);
@@ -25,6 +30,7 @@ public class objectTranslator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 
     public void DondurSag()
@@ -51,11 +57,16 @@ public class objectTranslator : MonoBehaviour
 
     public void Ok()
     {
-        Destroy(canvas);
+     canvas.SetActive(false);
         PlayerPrefs.SetInt(gameObject.name, 1);
         DataManager.Instance.SaveData();
         Debug.Log("KAYDEDILDI");
 
 
+    }
+
+    public void selected()
+    {
+        canvas.SetActive(true);
     }
 }

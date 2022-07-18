@@ -9,10 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6476463259269612745}
-  - component: {fileID: 5324150163773862972}
   m_Layer: 0
-  m_Name: masa02
-  m_TagString: Building
+  m_Name: a
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,19 +31,6 @@ Transform:
   m_Father: {fileID: 3995079465359182106}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 1.337, y: 0, z: 0}
---- !u!65 &5324150163773862972
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142751338877605317}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.5619106, y: 2.145637, z: 1.8159807}
-  m_Center: {x: -0.031245206, y: 0.28120363, z: -0.02012636}
 --- !u!1 &1540466827821364888
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,10 +356,9 @@ GameObject:
   - component: {fileID: 3995079465359182106}
   - component: {fileID: 16014507841417666}
   - component: {fileID: 5704411207717928070}
-  - component: {fileID: 3937960239305989483}
   m_Layer: 0
   m_Name: masa01 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,8 +370,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6042315241276731074}
-  m_LocalRotation: {x: 0.008726558, y: -0, z: -0, w: 0.999962}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.01166722, y: 0, z: 0, w: 0.999932}
+  m_LocalPosition: {x: 0, y: 1.1, z: 0.03}
   m_LocalScale: {x: 1.3601629, y: 0.04531868, z: 1.3601629}
   m_Children:
   - {fileID: 872607389182056775}
@@ -396,7 +381,7 @@ Transform:
   - {fileID: 6476463259269612745}
   m_Father: {fileID: 5349918433663224993}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.337, y: 0, z: 0}
 --- !u!33 &16014507841417666
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -446,20 +431,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3937960239305989483
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042315241276731074}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &6539745407210714622
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,9 +441,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5349918433663224993}
   - component: {fileID: 5897300551037552968}
+  - component: {fileID: 7972736819583752138}
   m_Layer: 0
   m_Name: masa01
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6539745407210714622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.164413, y: 1.07, z: 15.73225}
+  m_LocalPosition: {x: 16.164413, y: 0.3, z: 15.73225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3995079465359182106}
@@ -506,6 +478,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yFloat: 0
   canvas: {fileID: 1142751338877605317}
+--- !u!65 &7972736819583752138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6539745407210714622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9044962, y: 1.3333601, z: 2.6999502}
+  m_Center: {x: 0.08428335, y: 0.4933198, z: 0.30359888}
 --- !u!1 &7051667370169115030
 GameObject:
   m_ObjectHideFlags: 0

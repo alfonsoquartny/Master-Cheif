@@ -29,10 +29,25 @@ public class spawner : MonoBehaviour
     {
         Building();
         DeleteItem();
+
     }
 
 
-    
+    public void selectMode()
+    {
+
+        if (buildMode != BuildMode.Selecting)
+            return;
+            if (PointerHit.collider.tag == "Building" && Input.GetKeyDown(KeyCode.Mouse0))
+            {
+            PlayerPrefs.SetInt(PointerHit.collider.name, 0);
+            objectTranslator.Instance.selected();
+            }
+            if (PointerHit.collider.tag == "Water" && Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                objectTranslator.Instance.Ok();
+            }
+    }
     public void deleteMode()
     {
         buildMode = BuildMode.Deleting;
@@ -72,6 +87,7 @@ public class spawner : MonoBehaviour
             {
                 DataManager.Instance.RemoveItem(PointerHit.collider.gameObject.name);
                 Destroy(PointerHit.collider.gameObject);
+                DataManager.Instance.SaveData();
             }
         }
     }
